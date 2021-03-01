@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+    <style name="Theme.NewsForYou" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    <!-- Primary brand color. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+</style>
+    <style name="Theme.NewsForYou.NoActionBar">
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyAppBarLayoutTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+</resources>

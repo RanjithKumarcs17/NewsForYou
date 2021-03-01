@@ -1,0 +1,22 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context='com.example.newsforyou.MainActivity'>
+
+    <item
+        android:id="@+id/action_search"
+        android:title="Search"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView"
+        android:theme='@android:style/Theme.Holo.Light.DarkActionBar'/>
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="Settings"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+</menu>
