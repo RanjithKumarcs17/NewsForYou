@@ -14,9 +14,16 @@
         android:theme='@android:style/Theme.Holo.Light.DarkActionBar'/>
 
     <item
-        android:id="@+id/action_settings"
-        android:title="Settings"
+        android:id="@+id/action_about"
+        android:title="About App"
         android:orderInCategory="100"
         app:showAsAction="never" />
+    <item
+android:id="@+id/action_contact"
+        android:title="Contact"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+
 
 </menu>

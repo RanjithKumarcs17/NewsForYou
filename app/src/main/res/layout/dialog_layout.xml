@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+   <ImageView
+       android:id="@+id/M1"
+       android:layout_width="40dp"
+       android:layout_height="40dp"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="10dp"
+       android:src="@mipmap/ic_launcher"
+       android:background="@drawable/round_white"/>
+
+    <TextView
+        android:id="@+id/A1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/M1"
+        android:fontFamily="sans-serif"
+        android:text="About App"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/A2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/M1"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="10dp"
+        android:text="News For You App"
+        android:textColor="@color/black"
+        android:textSize="13dp" />
+    <TextView
+        android:id="@+id/AA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="News App which uses API for fetching news updates"
+        android:textSize="12dp"
+        android:layout_marginLeft="13dp"
+        android:layout_below="@+id/A2"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/A3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed By: Ranjith Kumar S"
+        android:textSize="15dp"
+        android:layout_marginLeft="13dp"
+        android:layout_below="@+id/AA"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/A4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="API :"
+        android:textSize="13dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="13dp"
+        android:layout_below="@+id/A3"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/A5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type : REST API"
+        android:textSize="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_below="@+id/A4"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/A6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="URL  : https://newsapi.org"
+        android:textSize="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_below="@+id/A5"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/A7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Software :"
+        android:textSize="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_below="@+id/A6"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/A8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android Studio"
+        android:textSize="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_below="@+id/A7"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/A9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version : 4.1.1"
+        android:textSize="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_below="@+id/A8"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/A10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Code : Java 8"
+        android:textSize="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_below="@+id/A9"
+        android:textColor="@color/black"/>
+
+
+</RelativeLayout>

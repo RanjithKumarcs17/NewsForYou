@@ -31,7 +31,7 @@ public class Utils {
     }
 
     public static String DateToTimeFormat(String oldstringDate){
-        PrettyTime p = new PrettyTime(new Locale(getCountry()));
+        PrettyTime p = new PrettyTime(new Locale(getLanguage()));
         String isTime = null;
         try {
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'",
@@ -47,7 +47,7 @@ public class Utils {
 
     public static String DateFormat(String oldstringDate){
         String newDate;
-        SimpleDateFormat dateFormat = new SimpleDateFormat("d MMM yyyy", new Locale(getCountry()));
+        SimpleDateFormat dateFormat = new SimpleDateFormat("E,d MMM yyyy", new Locale(getLanguage()));
         try {
             Date date = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'").parse(oldstringDate);
             newDate = dateFormat.format(date);

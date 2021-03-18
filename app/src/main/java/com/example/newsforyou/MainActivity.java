@@ -1,6 +1,7 @@
 package com.example.newsforyou;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityOptionsCompat;
 import androidx.core.util.Pair;
@@ -16,12 +17,15 @@ import retrofit2.Retrofit;
 import retrofit2.http.Query;
 
 
+import android.app.Activity;
 import android.app.DownloadManager;
 import android.app.SearchManager;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -142,7 +146,7 @@ public class  MainActivity extends AppCompatActivity implements SwipeRefreshLayo
                      }
 
                      showErrorMesssage(
-                             R.drawable.no_result,
+                             R.drawable.error,
                              "No Result",
                              "Please Try Again!\n"+
                                      errorCode);
@@ -155,7 +159,7 @@ public class  MainActivity extends AppCompatActivity implements SwipeRefreshLayo
                 topHeadline.setVisibility(View.INVISIBLE);
                 swipeRefreshLayout.setRefreshing(false);
                 showErrorMesssage(
-                        R.drawable.no_result,
+                        R.drawable.error,
                         "Oops...",
                         "Network Failure,  Please Try Again!\n"+
                                 t.toString());
@@ -232,6 +236,47 @@ public class  MainActivity extends AppCompatActivity implements SwipeRefreshLayo
         searchMenuItem.getIcon().setVisible(false,false);
 
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+
+        if(id==R.id.action_about){
+            AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+
+            Activity getActivity = MainActivity.this;
+            LayoutInflater inflater = getActivity.getLayoutInflater();
+            View view = inflater.inflate(R.layout.dialog_layout, null);
+            builder.setView(view)
+            .setPositiveButton("Done", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                }
+            });
+            AlertDialog alert = builder.create();
+            alert.show();
+        }
+        else if(id==R.id.action_contact){
+            AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+
+            Activity getActivity = MainActivity.this;
+            LayoutInflater inflater = getActivity.getLayoutInflater();
+            View view = inflater.inflate(R.layout.contact_layout, null);
+            builder.setView(view)
+
+                    .setPositiveButton("Done", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                        }
+                    });
+            AlertDialog alert = builder.create();
+            alert.show();
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     @Override

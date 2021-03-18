@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/C1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_contacts"
+        android:background="@drawable/round_white"/>
+
+    <TextView
+        android:id="@+id/B1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/C1"
+        android:fontFamily="sans-serif"
+        android:text="Contact Details"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/B2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/C1"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="10dp"
+        android:text="Ranjith Kumar.S"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/B3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/B2"
+        android:layout_marginLeft="13dp"
+        android:text="Computer Science And Engineering"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/B4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/B3"
+        android:layout_marginLeft="13dp"
+        android:text="Bannari Amman Institute of Technology"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/B4"
+        android:layout_marginLeft="13dp"
+        android:src="@drawable/ic_call"/>
+
+
+
+    <TextView
+        android:id="@+id/B5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:layout_below="@+id/B4"
+        android:text="7904192952"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/B5"
+        android:layout_marginLeft="13dp"
+        android:src="@drawable/ic_mail"/>
+
+    <TextView
+        android:id="@+id/B6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/B5"
+        android:layout_marginLeft="33dp"
+        android:text="ranjithkumars.cs17@bitsathy.ac.in"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+</RelativeLayout>

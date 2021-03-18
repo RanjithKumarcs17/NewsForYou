@@ -165,7 +165,7 @@ public class NewsDetailActivity extends AppCompatActivity implements AppBarLayou
                 startActivity(Intent.createChooser(i, "   "));
 
             }catch (Exception e){
-                Toast.makeText(this, "Hmm.. Sorry, \nCannot be share", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Hmm.. Sorry, \nCannot be shared", Toast.LENGTH_SHORT).show();
             }
         }
 

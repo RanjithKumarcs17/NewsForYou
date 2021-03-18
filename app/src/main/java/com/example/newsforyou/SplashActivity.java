@@ -46,7 +46,7 @@ public class SplashActivity extends AppCompatActivity {
         splas_text2= findViewById(R.id.splash_text2);
         progressBar= findViewById(R.id.progressBar);
 
-        progressBar.getProgressDrawable().setColorFilter(Color.WHITE, PorterDuff.Mode.SRC_IN);
+        progressBar.getProgressDrawable().setColorFilter(Color.BLACK, PorterDuff.Mode.SRC_IN);
 
         splas_image.setAnimation(topanim);
         animatText("NEWS FOR YOU");

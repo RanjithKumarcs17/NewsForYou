@@ -98,6 +98,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
         void onItemClick(View view, int position);
     }
 
+
+
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
         TextView title, desc, author, published_ad, source, time;

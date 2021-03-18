@@ -3,6 +3,8 @@
 
     <style name="Theme.NewsForYou" parent="Theme.AppCompat.Light.DarkActionBar">
 
+    <item name="android:textColor">@color/purple_200</item>
+
     <!-- Primary brand color. -->
     <item name="colorPrimary">@color/colorPrimary</item>
     <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
@@ -19,6 +21,7 @@
     <style name="MyAppBarLayoutTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
         <item name="colorControlHighlight">@color/colorAccent</item>
     </style>
+
 
 
 </resources>
